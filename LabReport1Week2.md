@@ -1,4 +1,6 @@
-# Lab Report
+# **Lab Report**
+
+In this lab report I will provide a tutorial on downloading VScode, ssh-ing into a remote computer with an account, copying files into the remote computer with scp, setting up ssh keys for the client and server, and introducing various commands and tricks about using those commands efficiently.
 
 ## *Installing VScode*
 
