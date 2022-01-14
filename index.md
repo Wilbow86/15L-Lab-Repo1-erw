@@ -1,13 +1,3 @@
+# Lab Reports for CS15L (*all there is for now*):
 
-"Hello World"
-
-*Italics* **bold**
-
-
-# Heading 2 test
-
-[Link][1]
-15L-Lab-Repo1-erw
-[1]: https://github.com/
-
-Goodbye
+[LabReport1](https://wilbow86.github.io/15L-Lab-Repo1-erw/LabReport1Week2)
