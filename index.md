@@ -1,2 +1,4 @@
 
 "Hello World"
+
+*Italics* **bold**
