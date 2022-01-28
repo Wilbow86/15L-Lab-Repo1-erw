@@ -85,7 +85,9 @@ You may have noticed that we are wasting too much time by entering our password 
 
 The first step to the keys is to generate them.  Do this by typing into the terminal 
 
-```ssh-keygen```  
+```
+ssh-keygen
+```  
 
 First you will be asked where to save the key; press enter to change nothing and leave it in its default place.  Then you will be prompted to come up with a password, just press enter and then enter again because we do not want to have to type a password in.  You now have a pair of keys, one public and one private.
 
