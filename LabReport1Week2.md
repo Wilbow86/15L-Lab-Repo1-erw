@@ -97,6 +97,13 @@ The final bit of this tutorial will be about streamlining ssh usage.  One big he
 
 ![Image](multicommand.png)
 
-On top of that, you can use the up-arrow key on the command line to pull up the last thing you typed into it.
+Writing and running this command (with my account name) takes 76 keystrokes whereas running one command at a time: 
+```
+ssh cs15lwi22abx@ieng6.ucsd.edu
+javac WhereAmI.java
+java WhereAmI
+logout
+```
+nets 80 keystrokes.  There is another major downside to running these commands one per line though and that is re-running them with the up arrow key.  Re-running the single-line command takes 3 keystrokes, one to click on the terminal for reactivation, one to press the up arrow to bring it back, and one to press execute (Enter).  When re-running all four of these commands separately, Enter needs to be pressed 3 additional times, and because each command is furthur up the history, more up presses than 1 per command are required.  In fact, after activating the terminal, the separate commands take 5 keystrokes each, resulting in 1 terminal activating keystroke, 4 * 4 up arrow keystrokes to bring up commands, and 4 * 1 execute keystorke to execute commands that are brought up.  The 1-line command's 3 keystrokes save 18 keystrokes over the other method's 21 total keystrokes per re-run.
 
 That will conclude the tutorial, hopefully it was helpful, and thank you for reading.
