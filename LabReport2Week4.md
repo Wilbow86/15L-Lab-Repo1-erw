@@ -8,7 +8,7 @@ During labs 3 & 4, my group and I worked on debugging a markdownParse file throu
 
 ### What Changed
 
-the first commit was an implementation of breaks in the getLinks method that would trigger if the next character in the sequence was not in the file.
+The first commit was an implementation of breaks in the getLinks method that would trigger if the next character in the sequence was not in the file.
 
 ![](Commit1Change.png)
 
@@ -32,7 +32,7 @@ The program would try to add the text between two parantheses even if it did not
 
 ### What Changed
 
-the second commit was an added condition to the break for closeBracket so only situations where the close bracket and open parenthesis were next to eachother would count as links.
+The second commit was an added condition to the break for closeBracket so only situations where the close bracket and open parenthesis were next to eachother would count as links.
 
 ![](Commit2Change.png)
 
@@ -56,7 +56,7 @@ The program did not exclude cases where the parenthesis and the brackets were se
 
 ### What Changed
 
-the second commit was an added condition to the break for openBracket so situations where there was an exclamation point directly before the open bracket were excluded. There was also still a bug that should have been addressed by commit 1 for a break if nextOpenBracket was -1 that was remedied here.
+The tird commit was an added condition to the break for openBracket so situations where there was an exclamation point directly before the open bracket were excluded. There was also still a bug that should have been addressed by commit 1 for a break if nextOpenBracket was -1 that was remedied here.
 
 ![](Commit3Change.png)
 
@@ -68,7 +68,7 @@ The third failure-inducing input was a new file with an image because in markdow
 
 ### Result of Running Before Fix
 
-The program returned the string in the image's parenthesis, which is the wrong output because the writing in the image's parenthesis should not be added to the listas a link.
+The program returned the string in the image's parenthesis, which is the wrong output because the writing in the image's parenthesis should not be added to the list as a link.
 
 ![](Symptom3.png)
 
