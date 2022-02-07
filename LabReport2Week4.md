@@ -14,7 +14,7 @@ The first commit was an implementation of breaks in the getLinks method that wou
 
 ### Failure-inducing Input
 
-The first failure-inducing input was a file that had a real link, and an open bracket near the end.
+The first failure-inducing input was a file that had a real link, and an open bracket near the end.  [link to first failure-inducing input](https://github.com/Wilbow86/markdown-parse/commit/9a85844d8d56ad115b2c492c48091a5dd27d15c3#diff-c1cb090c663773387c8b4172c8b4ad095c377ea0a0535e2d0b3b59bc7966c3b0)
 
 ![](BreakTest1.png)
 
@@ -38,7 +38,7 @@ The second commit was an added condition to the break for closeBracket so only s
 
 ### Failure-inducing Input
 
-The second failure-inducing input was the previous file, but with an almost-correct link format added afterward in that there were spaces between the close-bracket and the open parenthesis which markdown does not recognize as a link.
+The second failure-inducing input was the previous file, but with an almost-correct link format added afterward in that there were spaces between the close-bracket and the open parenthesis which markdown does not recognize as a link.  [link to second failure-inducing input](https://github.com/Wilbow86/markdown-parse/commit/6fd6bf2ebfeea05616e45115124f2c5b2164c122#diff-c1cb090c663773387c8b4172c8b4ad095c377ea0a0535e2d0b3b59bc7966c3b0)
 
 ![](BreakTest2.png)
 
@@ -62,7 +62,7 @@ The tird commit was an added condition to the break for openBracket so situation
 
 ### Failure-inducing Input
 
-The third failure-inducing input was a new file with an image because in markdown the format for a link is ```[]()``` while an image is ```![]()``` in which case, the text in the parentheses should not be returned as a link.
+The third failure-inducing input was a new file with an image because in markdown the format for a link is ```[]()``` while an image is ```![]()``` in which case, the text in the parentheses should not be returned as a link.  [link to third failure-inducing input](https://github.com/Wilbow86/markdown-parse/commit/8c8a00073ac6d5a1233fd0a75acf92113b0bb8ae#diff-1c2769d4e68d35a60072ca1b96733e461238a1dd4d679981f4be759663542ef2)
 
 ![](BreakTest3.png)
 
