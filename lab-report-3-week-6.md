@@ -6,3 +6,11 @@ to put a project on the server. We can do this with the ```-r``` extention.  For
 
 ## copying whole directory into server
 
+To copy a directory into the server, run 
+
+  ```scp -r direcotoryPath accountName@serverName:~```
+  
+***Images***
+
+## Junit Tests in Server
+
