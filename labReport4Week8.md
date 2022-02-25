@@ -48,13 +48,13 @@ My markdown-parse fails to
 
 ![image](ExpectSnip3.png)
 
-according to the markdown preview in vsCode, the expected output should be .  (). 
+according to the markdown preview in vsCode, the only link that is actually part of link syntax is the second really long title containing a github link.  the other links that show up do not put the link in bracketed text, so they are not properly formatted. (https://ucsd-cse15l-w22.githum.io/). 
 
 ### Output of reviewed markdown-parse
 
 ![image](PlatypusOutput3.png)
 
-the project I reviwed . 
+the project I reviwed got the link correctly, but added a large portion of the file as a single link afterward (from the start of the link without a close parenth to the close parenth of the next link). 
 
 ### Output of my markdown-parse
 
