@@ -2,6 +2,12 @@
 
 In this lab report, I will observe the output of my markdown-parse and one that I reviewed under certain cases and either provide a fix for each if the fix is trivial, or explain why the fix must be non-trivial.
 
+## Repositories used
+
+[here is a link to my repo](https://github.com/Wilbow86/markdown-parse)
+
+[here is a link to the repo I reviewed](https://github.com/nseyoum/CSE15L-Platypus.git/)
+
 ## Snippet 1
 
 ### Expected output
@@ -14,9 +20,11 @@ according to the markdown preview in vsCode, the expected output should be links
 
 ![image](PlatypusOutput1.png)
 
-the project I reviwed failed, showing the same symptom as my own, including the first link(url.com) and excluding the final(ucsd.edu).  Note: the tests shown in the reviewed sections are the same ones used for my tests, but because I am running my tests on ieng-6 and the reviewed ones locally, it is better to show the JUnit tests in the reviewed output section than in my output's section. 
+the project I reviwed failed, showing the same symptom as my own, including the first link(url.com) and excluding the final(ucsd.edu).  
 
 ### Output of my markdown-parse
+
+![image](MySnip1Test.png)
 
 ![image](MySnip1TO.png)
 
@@ -38,9 +46,11 @@ the project I reviwed only returned one of the three links, the one with nested 
 
 ### Output of my markdown-parse
 
+![image](MySnip2Test.png)
+
 ![image](MySnip2TO.png)
 
-My markdown-parse fails to 
+My markdown-parse successfully adds the first link to the list, fails to get the close parentheses from the second link, and returns before reaching the third link.  I can fix the early break by changing my four return statements to only increment currentIndex and continue instead of break, probably only taking four lines.  Fixing the parenthesis problem would require me to count the open/close parenthesis in the substring that might be added in a while loop, changing what the substring is under circumstances where I need to add up to a further close parenth, and have conditions that determine whether to add or not to add the string in the end.  I believe this process would be non-trivial and would probably require more iteration after I do it just to make the code work again.
 
 ## Snippet 3
 
@@ -54,10 +64,12 @@ according to the markdown preview in vsCode, the only link that is actually part
 
 ![image](PlatypusOutput3.png)
 
-the project I reviwed got the link correctly, but added a large portion of the file as a single link afterward (from the start of the link without a close parenth to the close parenth of the next link). 
+the project I reviewed got the link correctly, but added a large portion of the file as a single link afterward (from the start of the link without a close parenth to the close parenth of the next link). 
 
 ### Output of my markdown-parse
 
+![image](MySnip3Test.png)
+
 ![image](MySnip3TO.png)
 
-My markdown-parse fails to 
+My markdown-parse fils to exclude the twitter link because it does not check for new lines in links, correctly adds the github link that it is supposed to, and fails to exclude the rest of the file because the open parenth of the next link does not close until the end of the file.  To fix these issues, my code should check for a new line break in the bracketed text and exclude that link if there is one, and exclude a link if there is a new line character in the string to be added.  The latter condition could be checked and fixed in 2 lines, but the check to allow a new line, but not a break in the brackets may prove to take more than the remaining 8.  The best way to do it would probably be to make a string variable from the text in brackets and have a set of conditional statements to determine whether to allow the loop to go on or continue.
