@@ -2,7 +2,7 @@
 
 In this lab report I will compare 2 examples of differences of the output of my markdown parse on a set of test files with the output of a version of markdown parse from lab 9. 
 
-## acquiring different results
+## Acquiring different results
 
 To find which tests produced a different output between my implementation of markdownParse and the version from lab nine by using the ```diff``` command to give me the places where output was different, and directing the output of ```diff``` in a new text file called diffOutputs.  I then searched through the new file manually for the two example tests I will highlight for this report
 
@@ -14,7 +14,7 @@ One difference between the two programs' outputs ocurred at test 22.md.
 
 ![Image](MyTest22Output.png)
 
-### lab 9 output
+### Lab 9 output
 
 ![Image](labTest22Output.png)
 
@@ -40,7 +40,7 @@ Another difference between the two programs' outputs ocurred at test 201.md.
 
 ![Image](MyTest201Output.png)
 
-### lab 9 output
+### Lab 9 output
 
 ![Image](LabTest201Output.png)
 
